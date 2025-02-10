@@ -84,18 +84,18 @@ public class EmployeeServiceImpl implements EmployeeService {
         //2、设置默认密码，调用DigestUtils的md5DigestAsHex方法进行加密
         employee.setPassword(DigestUtils.md5DigestAsHex(PasswordConstant.DEFAULT_PASSWORD.getBytes()));
 
-        //set创建时间
-        employee.setCreateTime(LocalDateTime.now());
-
-        //set更新时间
-        employee.setUpdateTime(LocalDateTime.now());
-
-        //set创建人
-        employee.setCreateUser(BaseContext.getCurrentId());
-
-
-        //set更新人
-        employee.setUpdateUser(BaseContext.getCurrentId());
+//        //set创建时间
+//        employee.setCreateTime(LocalDateTime.now());
+//
+//        //set更新时间
+//        employee.setUpdateTime(LocalDateTime.now());
+//
+//        //set创建人
+//        employee.setCreateUser(BaseContext.getCurrentId());
+//
+//
+//        //set更新人
+//        employee.setUpdateUser(BaseContext.getCurrentId());
 
         employee.setId(employee.getId());
 
