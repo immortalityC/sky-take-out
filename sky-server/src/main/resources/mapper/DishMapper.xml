@@ -25,6 +25,9 @@
             order by d.create_time desc
 
     </select>
+    <select id="getDishByCategoryId" resultType="com.sky.entity.Dish">
+        select * from dish where category_id = #{categoryId} and status = 1
+    </select>
 
 
     <update id="update">
