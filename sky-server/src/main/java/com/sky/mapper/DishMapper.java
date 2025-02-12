@@ -57,4 +57,7 @@ public interface DishMapper {
     void update(Dish dish);
 
     List<Dish> getDishByCategoryId(Long categoryId);
+
+
+    List<Dish> list(Dish dish);
 }
